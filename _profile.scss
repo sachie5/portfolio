@@ -1,0 +1,384 @@
+@use "./variables"as *;
+
+header {
+    background-color: $background-color;
+    display: none;
+}
+
+.intro {
+    height: 516px;
+    padding: 20px;
+
+    &__greeting {
+        font-size: 16px;
+        padding: 30px 0;
+    }
+
+    &__image {
+        width: 20px;
+        padding-right: 5px;
+
+        &--large {
+            display: none;
+        }
+    }
+
+    &__statement {
+        font-size: 48px;
+    }
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-areas:
+        'heading'
+        'image'
+        'paragraph1'
+        'paragraph2';
+}
+
+.about-grid1 {
+    grid-area: image;
+    justify-self: center;
+}
+
+.about-grid2 {
+    grid-area: heading;
+    font-size: 32px;
+        padding: 20px;
+        text-align: center;
+}
+
+.about-grid3 {
+    grid-area: paragraph1;
+}
+
+.about-grid4 {
+    grid-area: paragraph2;
+}
+
+.about {
+    padding: 20px;
+
+    &__title {
+        
+    }
+
+    &__image {
+        width: 80%;
+        padding: 20px 0 40px 0;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 2;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+
+    &__title {
+        padding: 20px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    &__description {
+        padding: 20px;
+        line-height: 2;
+    }
+
+    &__image {
+        width: 50%;
+        align-items: center;
+    }
+
+    &__caption {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    padding: 20px;
+    gap: 35px;
+    grid-template-areas:
+        'spring-boot java react'
+        'bem scss javascript'
+        'css3 html5 git';
+
+}
+
+.grid-item1 {
+    grid-area: git;
+}
+
+.grid-item2 {
+    grid-area: html5;
+}
+
+.grid-item3 {
+    grid-area: css3;
+}
+
+.grid-item4 {
+    grid-area: javascript;
+}
+
+.grid-item5 {
+    grid-area: scss;
+}
+
+.grid-item6 {
+    grid-area: bem;
+}
+
+.grid-item7 {
+    grid-area: react;
+}
+
+.grid-item8 {
+    grid-area: java;
+}
+
+.grid-item9 {
+    grid-area: spring-boot;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-size: 32px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__figure {
+        padding: 40px 20px;
+        width: 80%;
+    }
+
+    &__skill {
+        padding: 20px 0px 5px 0;
+        font-size: 16px;
+    }
+
+    &__name {
+        padding: 0 0 20px 0;
+        font-size: 40px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 2;
+        padding-bottom: 20px;
+    }
+
+    &__button {
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        width: 30%;
+
+        &--image {
+            height: 21px;
+            width: 20px;
+        }
+
+
+    }
+
+}
+
+.footer {
+    background-color: $primary-color;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__image {
+        width: 40px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    &__email {
+        color: $background-color;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header {
+        display: flex;
+        height: 45px;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        &__name {
+            font-size: 24px;
+            padding: 10px 20px;
+        }
+
+        &__nav {
+            display: inline-block;
+            text-align: right;
+            padding: 10px 20px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+
+            &--button {
+                font-size: 0.7rem;
+                font-weight: bold;
+                border: solid 1px black;
+                border-radius: 10px;
+
+            }
+        }
+
+
+    }
+
+    .intro {
+
+        display: flex;
+        justify-content: space-evenly;
+        padding: 80px 0 0 0;
+
+        &__words {
+            display: flex;
+            flex-direction: column;
+            padding-left: 40px;
+
+        }
+
+        &__image {
+
+            &--large {
+                display: flex;
+            }
+        }
+    }
+
+    .about {
+        display: flex;
+        
+        &__image {
+            width: 30%;
+            height: auto;
+        }
+
+        &__description {
+            text-align: left;
+        }
+
+        &__title {
+            text-align: left;
+        }
+
+    }
+
+    .flex-container1 {
+        display: block;
+        align-self: center;
+        padding: 35px;
+    }
+
+    .grid-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills{
+        text-align: center;
+        border: 50px;
+
+
+        &__description {
+            width: 500px;
+            padding: 20px 0;
+        }
+
+        &__image{
+            width: 3rem;
+        }
+    }
+
+    .projects{
+        padding: 60px 20px; 
+
+        &__skill{
+            font-size: 15px;
+        }
+
+        &__name{
+            font-size: 30px;
+        }
+
+        &__buttons {
+            display: flex;
+    
+
+           
+        }
+
+    .grid-container3{
+        display: grid;
+        grid-template-areas: 
+        'project1 project2 project3';
+    }
+
+    .grid3-item1{
+        grid-area: project1;
+    }
+
+   .grid3-item2{
+        grid-area: project2;
+    }
+
+    .grid3-item3{
+        grid-area: project3;
+    }
+}
+
+    .footer{
+        height: 20vh;
+        flex-direction: row;
+        align-items: center;
+        
+        &__nav{
+            text-align: left;
+            padding-left: 60px;
+        }
+
+        &__email{
+            text-align: right;
+            padding-right: 60px;
+        }
+    }
+
+}

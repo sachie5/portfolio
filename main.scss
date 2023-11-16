@@ -1,0 +1,15 @@
+@use "./variables" as *;
+
+@use "./profile";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    font-family: $font-body;
+}
+
