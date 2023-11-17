@@ -42,7 +42,7 @@ header {
 .about-grid1 {
     grid-area: image;
     justify-self:center;
-    width: 17rem;
+    width: 19rem;
     padding: 20px 0;
 }
 
@@ -226,7 +226,7 @@ header {
 }
 
 .footer {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     height: 200px;
     width: 100%;
     display: flex;
@@ -272,9 +272,12 @@ header {
 
             &--button {
                 font-size: 0.7rem;
-                font-weight: bold;
+                font-weight: bolder;
                 border: solid 2px $tertiary-color;
                 border-radius: 10px;
+                background-color: $tertiary-color;
+                color: $secondary-color;
+                
 
             }
         }
@@ -285,7 +288,7 @@ header {
     .intro {
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 80px 0 0 0;
 
         &__words {
@@ -303,7 +306,6 @@ header {
     }
 
     .about {
-
         &__description {
             text-align: left;
         }
@@ -365,6 +367,9 @@ header {
 
     .projects{
         padding: 60px 10px; 
+        
+    background-color: $tertiary-color;
+    color: $secondary-color;
 
         &__figure{
             padding: 0;
