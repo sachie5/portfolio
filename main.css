@@ -30,6 +30,8 @@ header {
 .about-grid1 {
   grid-area: image;
   justify-self: center;
+  width: 17rem;
+  padding: 20px 0;
 }
 
 .about-grid2 {
@@ -50,10 +52,6 @@ header {
 .about {
   padding: 20px;
 }
-.about__image {
-  width: 80%;
-  padding: 20px 0 40px 0;
-}
 .about__description {
   font-size: 16px;
   line-height: 2;
@@ -64,7 +62,6 @@ header {
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 40px 20px;
 }
 .skills__title {
@@ -77,8 +74,7 @@ header {
   line-height: 2;
 }
 .skills__image {
-  width: 50%;
-  align-items: center;
+  width: 3em;
 }
 .skills__caption {
   width: 100%;
@@ -90,6 +86,8 @@ header {
 
 .grid-container {
   display: grid;
+  justify-items: center;
+  align-items: center;
   padding: 20px;
   gap: 35px;
   grid-template-areas: "spring-boot java react" "bem scss javascript" "css3 html5 git";
@@ -131,19 +129,29 @@ header {
   grid-area: spring-boot;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.grid-container3 {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "project1" "project2" "project3";
 }
+.grid-container3 .grid3-item1 {
+  grid-area: project1;
+}
+.grid-container3 .grid3-item2 {
+  grid-area: project2;
+}
+.grid-container3 .grid3-item3 {
+  grid-area: project3;
+}
+
 .projects__title {
   font-size: 32px;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 }
 .projects__figure {
-  padding: 40px 20px;
-  width: 80%;
+  width: 95%;
+  padding: 20px;
 }
 .projects__skill {
   padding: 20px 0px 5px 0;
@@ -159,17 +167,21 @@ header {
   padding-bottom: 20px;
 }
 .projects__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 7rem;
   border: 1px solid black;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 10px;
+  font-size: 14px;
   font-weight: bold;
   color: black;
   text-decoration: none;
-  width: 30%;
 }
 .projects__button--image {
   height: 21px;
-  width: 20px;
+  width: 25%;
 }
 
 .footer {
@@ -231,41 +243,49 @@ header {
   .intro__image--large {
     display: flex;
   }
-  .about {
-    display: flex;
-  }
-  .about__image {
-    width: 30%;
-    height: auto;
-  }
   .about__description {
     text-align: left;
   }
-  .about__title {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas: "image ." "image ." "image heading" "image paragraph1" "image paragraph2" "image ." "image .";
+  }
+  .about-grid .about-grid1 {
+    grid-area: image;
+    height: 40rem;
+    place-self: center;
+  }
+  .about-grid .about-grid2 {
+    grid-area: heading;
     text-align: left;
   }
-  .flex-container1 {
-    display: block;
-    align-self: center;
-    padding: 35px;
+  .about-grid .about-grid3 {
+    grid-area: paragraph1;
+  }
+  .about-grid .about-grid4 {
+    grid-area: paragraph2;
   }
   .grid-container {
     display: flex;
     justify-content: center;
   }
   .skills {
-    text-align: center;
+    justify-content: center;
     border: 50px;
   }
   .skills__description {
-    width: 500px;
-    padding: 20px 0;
+    padding: 20px 140px;
+    text-align: center;
   }
   .skills__image {
     width: 3rem;
   }
   .projects {
-    padding: 60px 20px;
+    padding: 60px 10px;
+  }
+  .projects__figure {
+    padding: 0;
   }
   .projects__skill {
     font-size: 15px;
@@ -274,11 +294,13 @@ header {
     font-size: 30px;
   }
   .projects__buttons {
-    display: flex;
+    display: inline;
   }
   .projects .grid-container3 {
     display: grid;
-    grid-template-areas: "project1 project2 project3";
+    gap: 40px 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "project1 project2 project3" "project4 project5 project6";
   }
   .projects .grid3-item1 {
     grid-area: project1;
@@ -288,6 +310,15 @@ header {
   }
   .projects .grid3-item3 {
     grid-area: project3;
+  }
+  .projects .grid3-item4 {
+    grid-area: project4;
+  }
+  .projects .grid3-item5 {
+    grid-area: project5;
+  }
+  .projects .grid3-item6 {
+    grid-area: project6;
   }
   .footer {
     height: 20vh;
