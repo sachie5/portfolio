@@ -1,5 +1,5 @@
 header {
-  background-color: #FFFFFF;
+  background-color: #EEEBD0;
   display: none;
 }
 
@@ -199,13 +199,13 @@ header {
   padding: 20px 0;
 }
 .footer__email {
-  color: #FFFFFF;
+  color: #E87EA1;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
-    height: 45px;
+    height: 100px;
     justify-content: space-between;
     padding: 20px 0;
   }
@@ -343,4 +343,5 @@ header {
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #E87EA1;
 }/*# sourceMappingURL=main.css.map */

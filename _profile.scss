@@ -1,7 +1,7 @@
 @use "./variables"as *;
 
 header {
-    background-color: $background-color;
+    background-color: $secondary-color;
     display: none;
 }
 
@@ -248,7 +248,7 @@ header {
 @media screen and (min-width:768px) {
     .header {
         display: flex;
-        height: 45px;
+        height: 100px;
         justify-content: space-between;
         padding: 20px 0;
 
