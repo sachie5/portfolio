@@ -1,5 +1,5 @@
 header {
-  background-color: #EEEBD0;
+  background-color: #0B3948;
   display: none;
 }
 
@@ -171,12 +171,12 @@ header {
   align-items: center;
   justify-content: space-evenly;
   width: 7rem;
-  border: 1px solid black;
+  border: 2px solid #0B3948;
   padding: 10px 15px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: #0B3948;
   text-decoration: none;
 }
 .projects__button--image {
@@ -199,7 +199,7 @@ header {
   padding: 20px 0;
 }
 .footer__email {
-  color: #E87EA1;
+  color: #EEEBD0;
 }
 
 @media screen and (min-width: 768px) {
@@ -208,6 +208,7 @@ header {
     height: 100px;
     justify-content: space-between;
     padding: 20px 0;
+    color: #EEEBD0;
   }
   .header__name {
     font-size: 24px;
@@ -220,14 +221,14 @@ header {
   }
   .header__link {
     text-decoration: none;
-    color: black;
+    color: #EEEBD0;
     font-size: 20px;
     padding: 10px;
   }
   .header__link--button {
     font-size: 0.7rem;
     font-weight: bold;
-    border: solid 1px black;
+    border: solid 2px #EEEBD0;
     border-radius: 10px;
   }
   .intro {
@@ -343,5 +344,6 @@ header {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #E87EA1;
+  background-color: #FFAFC5;
+  color: #0B3948;
 }/*# sourceMappingURL=main.css.map */

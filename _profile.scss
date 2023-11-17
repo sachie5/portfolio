@@ -206,12 +206,12 @@ header {
         align-items: center;
         justify-content: space-evenly;
         width: 7rem;
-        border: 1px solid black;
+        border: 2px solid $secondary-color;
         padding: 10px 15px;
         border-radius: 10px;
         font-size: 14px;
         font-weight: bold;
-        color: black;
+        color: $secondary-color;
         text-decoration: none;
        
 
@@ -241,7 +241,7 @@ header {
     }
 
     &__email {
-        color: $background-color;
+        color: $tertiary-color;
     }
 }
 
@@ -251,6 +251,7 @@ header {
         height: 100px;
         justify-content: space-between;
         padding: 20px 0;
+        color: $tertiary-color;
 
         &__name {
             font-size: 24px;
@@ -265,14 +266,14 @@ header {
 
         &__link {
             text-decoration: none;
-            color: black;
+            color: $tertiary-color;
             font-size: 20px;
             padding: 10px;
 
             &--button {
                 font-size: 0.7rem;
                 font-weight: bold;
-                border: solid 1px black;
+                border: solid 2px $tertiary-color;
                 border-radius: 10px;
 
             }
@@ -379,7 +380,7 @@ header {
 
         &__buttons {
             display: inline;
-                      }
+                                  }
 
     .grid-container3{
         display: grid;
