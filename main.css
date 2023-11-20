@@ -22,41 +22,38 @@ header {
   font-size: 48px;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-areas: "heading" "image" "paragraph1" "paragraph2";
-}
-
-.about-grid1 {
-  grid-area: image;
-  justify-self: center;
-  width: 19rem;
-  padding: 20px 0;
-}
-
-.about-grid2 {
-  grid-area: heading;
-  font-size: 32px;
-  padding: 20px;
-  text-align: center;
-}
-
-.about-grid3 {
-  grid-area: paragraph1;
-}
-
-.about-grid4 {
-  grid-area: paragraph2;
-}
-
 .about {
   padding: 20px;
+  background-color: #EEEBD0;
+  color: #0B3948;
 }
 .about__description {
   font-size: 16px;
   line-height: 2;
   width: 100%;
   padding: 10px;
+}
+.about__grid {
+  display: grid;
+  grid-template-areas: "heading" "image" "paragraph1" "paragraph2";
+}
+.about__grid--item1 {
+  grid-area: image;
+  justify-self: center;
+  width: 19rem;
+  padding: 20px 0;
+}
+.about__grid--item2 {
+  grid-area: heading;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+.about__grid--item3 {
+  grid-area: paragraph1;
+}
+.about__grid--item4 {
+  grid-area: paragraph2;
 }
 
 .skills {
@@ -83,8 +80,7 @@ header {
   font-weight: bold;
   font-size: 14px;
 }
-
-.grid-container {
+.skills__grid {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -144,6 +140,10 @@ header {
   grid-area: project3;
 }
 
+.projects {
+  background-color: #EEEBD0;
+  color: #0B3948;
+}
 .projects__title {
   font-size: 32px;
   padding: 40px;
@@ -246,28 +246,35 @@ header {
   .intro__image--large {
     display: flex;
   }
+  .about {
+    background-color: #EEEBD0;
+    color: #0B3948;
+    padding: 20px;
+  }
   .about__description {
     text-align: left;
   }
-  .about-grid {
+  .about__grid {
     display: grid;
     grid-template-columns: 40% 1fr;
     grid-template-areas: "image ." "image ." "image heading" "image paragraph1" "image paragraph2" "image ." "image .";
   }
-  .about-grid .about-grid1 {
+  .about__grid--item1 {
     grid-area: image;
     height: 40rem;
     place-self: center;
   }
-  .about-grid .about-grid2 {
+  .about__grid--item2 {
     grid-area: heading;
     text-align: left;
   }
-  .about-grid .about-grid3 {
+  .about__grid--item3 {
     grid-area: paragraph1;
+    padding: 20px;
   }
-  .about-grid .about-grid4 {
+  .about__grid--item4 {
     grid-area: paragraph2;
+    padding: 20px;
   }
   .grid-container {
     display: flex;

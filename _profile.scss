@@ -28,47 +28,47 @@ header {
     }
 }
 
-
-.about-grid {
-    display: grid;
-    grid-template-areas:
-        'heading'
-        'image'
-        'paragraph1'
-        'paragraph2';
-}
-
-
-.about-grid1 {
-    grid-area: image;
-    justify-self:center;
-    width: 19rem;
-    padding: 20px 0;
-}
-
-.about-grid2 {
-    grid-area: heading;
-    font-size: 32px;
-    padding: 20px;
-    text-align: center;
-}
-
-.about-grid3 {
-    grid-area: paragraph1;
-}
-
-.about-grid4 {
-    grid-area: paragraph2;
-}
-
 .about {
     padding: 20px;
+    background-color: $tertiary-color;
+    color: $secondary-color;
 
     &__description {
         font-size: 16px;
         line-height: 2;
         width: 100%;
         padding: 10px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-areas:
+            'heading'
+            'image'
+            'paragraph1'
+            'paragraph2';
+
+        &--item1 {
+            grid-area: image;
+            justify-self: center;
+            width: 19rem;
+            padding: 20px 0;
+        }
+
+        &--item2 {
+            grid-area: heading;
+            font-size: 32px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        &--item3 {
+            grid-area: paragraph1;
+        }
+
+        &--item4 {
+            grid-area: paragraph2;
+        }
     }
 }
 
@@ -99,20 +99,22 @@ header {
         font-weight: bold;
         font-size: 14px;
     }
+    
+    &__grid {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+        gap: 35px;
+        grid-template-areas:
+            'spring-boot java react'
+            'bem scss javascript'
+            'css3 html5 git';
+    
+    }
 }
 
-.grid-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    padding: 20px;
-    gap: 35px;
-    grid-template-areas:
-        'spring-boot java react'
-        'bem scss javascript'
-        'css3 html5 git';
 
-}
 
 .grid-item1 {
     grid-area: git;
@@ -153,31 +155,34 @@ header {
 .grid-container3 {
     display: grid;
     justify-items: center;
-    grid-template-areas: 
-    'project1'
-    'project2'
-    'project3';
+    grid-template-areas:
+        'project1'
+        'project2'
+        'project3';
 
 
-    .grid3-item1{
+    .grid3-item1 {
         grid-area: project1;
     }
 
-    .grid3-item2{
+    .grid3-item2 {
         grid-area: project2;
     }
 
-    .grid3-item3{
+    .grid3-item3 {
         grid-area: project3;
     }
 }
 
 .projects {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+
     &__title {
         font-size: 32px;
         padding: 40px;
         text-align: center;
-        
+
     }
 
     &__figure {
@@ -213,7 +218,7 @@ header {
         font-weight: bold;
         color: $secondary-color;
         text-decoration: none;
-       
+
 
         &--image {
             height: 21px;
@@ -277,7 +282,7 @@ header {
                 border-radius: 10px;
                 background-color: $tertiary-color;
                 color: $secondary-color;
-                
+
 
             }
         }
@@ -306,50 +311,56 @@ header {
     }
 
     .about {
+        background-color: $tertiary-color;
+        color: $secondary-color;
+        padding: 20px;
+
         &__description {
             text-align: left;
         }
+
+        &__grid {
+            display: grid;
+            grid-template-columns: 40% 1fr;
+            grid-template-areas:
+                'image .'
+                'image .'
+                'image heading'
+                'image paragraph1'
+                'image paragraph2'
+                'image .'
+                'image .';
+
+            &--item1 {
+                grid-area: image;
+                height: 40rem;
+                place-self: center;
+            }
+
+            &--item2 {
+                grid-area: heading;
+                text-align: left;
+            }
+
+            &--item3 {
+                grid-area: paragraph1;
+                padding: 20px;
+            }
+
+            &--item4 {
+                grid-area: paragraph2;
+                padding: 20px;
+            }
+        }
     }
 
-    .about-grid{
-        display: grid;
-        grid-template-columns: 40% 1fr;
-        grid-template-areas: 
-        'image .'
-        'image .'
-        'image heading'
-        'image paragraph1'
-        'image paragraph2'
-        'image .'
-        'image .';
 
-        .about-grid1 {
-            grid-area: image;
-            height: 40rem;
-            place-self: center;
-        }
-        
-        .about-grid2 {
-            grid-area: heading;
-            text-align:left;
-        }
-        
-        .about-grid3 {
-            grid-area: paragraph1;
-        }
-        
-        .about-grid4 {
-            grid-area: paragraph2;
-        }
-    }
-
-
-    .grid-container{
+    .grid-container {
         display: flex;
         justify-content: center;
     }
 
-    .skills{
+    .skills {
         justify-content: center;
         border: 50px;
 
@@ -357,83 +368,83 @@ header {
         &__description {
             padding: 20px 140px;
             text-align: center;
-            
+
         }
 
-        &__image{
+        &__image {
             width: 3rem;
         }
     }
 
-    .projects{
-        padding: 60px 10px; 
-        
-    background-color: $tertiary-color;
-    color: $secondary-color;
+    .projects {
+        padding: 60px 10px;
 
-        &__figure{
+        background-color: $tertiary-color;
+        color: $secondary-color;
+
+        &__figure {
             padding: 0;
         }
 
-        &__skill{
+        &__skill {
             font-size: 15px;
         }
 
-        &__name{
+        &__name {
             font-size: 30px;
         }
 
         &__buttons {
             display: inline;
-                                  }
+        }
 
-    .grid-container3{
-        display: grid;
-        gap: 40px 5px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        'project1 project2 project3'
-        'project4 project5 project6';
+        .grid-container3 {
+            display: grid;
+            gap: 40px 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                'project1 project2 project3'
+                'project4 project5 project6';
+        }
+
+        .grid3-item1 {
+            grid-area: project1;
+        }
+
+        .grid3-item2 {
+            grid-area: project2;
+        }
+
+        .grid3-item3 {
+            grid-area: project3;
+        }
+
+
+        .grid3-item4 {
+            grid-area: project4;
+        }
+
+        .grid3-item5 {
+            grid-area: project5;
+        }
+
+        .grid3-item6 {
+            grid-area: project6;
+        }
+
     }
 
-    .grid3-item1{
-        grid-area: project1;
-    }
-
-   .grid3-item2{
-        grid-area: project2;
-    }
-
-    .grid3-item3{
-        grid-area: project3;
-    }
-
-    
-    .grid3-item4{
-        grid-area: project4;
-    }
-
-   .grid3-item5{
-        grid-area: project5;
-    }
-
-    .grid3-item6{
-        grid-area: project6;
-    }
-    
-}
-
-    .footer{
+    .footer {
         height: 20vh;
         flex-direction: row;
         align-items: center;
-        
-        &__nav{
+
+        &__nav {
             text-align: left;
             padding-left: 60px;
         }
 
-        &__email{
+        &__email {
             text-align: right;
             padding-right: 60px;
         }
