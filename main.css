@@ -1,5 +1,5 @@
 header {
-  background-color: #0B3948;
+  background-color: #EBF5EE;
   display: none;
 }
 
@@ -24,8 +24,7 @@ header {
 
 .about {
   padding: 20px;
-  background-color: #EEEBD0;
-  color: #0B3948;
+  color: #EBF5EE;
 }
 .about__description {
   font-size: 16px;
@@ -60,6 +59,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
+  color: #EBF5EE;
 }
 .skills__title {
   padding: 20px;
@@ -117,8 +117,7 @@ header {
 }
 
 .projects {
-  background-color: #EEEBD0;
-  color: #0B3948;
+  color: #EBF5EE;
 }
 .projects__title {
   font-size: 32px;
@@ -147,30 +146,18 @@ header {
   align-items: center;
   justify-content: space-evenly;
   width: 7rem;
-  border: 2px solid #0B3948;
+  border: 2px solid #EBF5EE;
   padding: 10px 15px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
-  color: #0B3948;
+  color: #EBF5EE;
   text-decoration: none;
 }
 .projects__button__grid {
   display: grid;
   justify-items: center;
   grid-template-areas: "project1" "project2" "project3";
-  /* 
-              &--item4{
-                  display: none;
-              }
-
-              &--item5{
-                  display: none;
-              }
-
-              &--item6{
-                  display: none;
-              } */
 }
 .projects__button__grid--item1 {
   grid-area: project1;
@@ -181,13 +168,22 @@ header {
 .projects__button__grid--item3 {
   grid-area: project3;
 }
+.projects__button__grid--item4 {
+  display: none;
+}
+.projects__button__grid--item5 {
+  display: none;
+}
+.projects__button__grid--item6 {
+  display: none;
+}
 .projects__button--image {
   height: 21px;
   width: 25%;
 }
 
 .footer {
-  background-color: #0B3948;
+  background-color: #EBF5EE;
   height: 200px;
   width: 100%;
   display: flex;
@@ -201,7 +197,7 @@ header {
   padding: 20px 0;
 }
 .footer__email {
-  color: #EEEBD0;
+  color: #6B2737;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,7 +206,7 @@ header {
     height: 100px;
     justify-content: space-between;
     padding: 20px 0;
-    color: #EEEBD0;
+    color: #6B2737;
   }
   .header__name {
     font-size: 24px;
@@ -223,22 +219,22 @@ header {
   }
   .header__link {
     text-decoration: none;
-    color: #EEEBD0;
+    color: #6B2737;
     font-size: 20px;
     padding: 10px;
   }
   .header__link--button {
     font-size: 0.7rem;
     font-weight: bolder;
-    border: solid 2px #EEEBD0;
+    border: solid 2px #6B2737;
     border-radius: 10px;
-    background-color: #EEEBD0;
-    color: #0B3948;
+    background-color: #6B2737;
+    color: #EBF5EE;
   }
   .intro {
     display: flex;
     justify-content: space-between;
-    padding: 80px 0 0 0;
+    padding: 80px 0;
   }
   .intro__words {
     display: flex;
@@ -249,8 +245,7 @@ header {
     display: flex;
   }
   .about {
-    background-color: #EEEBD0;
-    color: #0B3948;
+    color: #EBF5EE;
     padding: 20px;
   }
   .about__description {
@@ -258,6 +253,7 @@ header {
   }
   .about__grid {
     display: grid;
+    padding-right: 10px;
     grid-template-columns: 40% 1fr;
     grid-template-areas: "image ." "image ." "image heading" "image paragraph1" "image paragraph2" "image ." "image .";
   }
@@ -281,6 +277,7 @@ header {
   .skills {
     justify-content: center;
     border: 50px;
+    color: #EBF5EE;
   }
   .skills__description {
     padding: 20px 140px;
@@ -290,12 +287,13 @@ header {
     width: 3rem;
   }
   .skills__grid {
+    justify-content: center;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5%;
     grid-template-areas: "spring-boot java react bem scss javascript css3 html5 git";
   }
   .projects {
-    padding: 60px 10px;
-    background-color: #EEEBD0;
-    color: #0B3948;
+    padding: 60px 20px;
+    color: #EBF5EE;
   }
   .projects__figure {
     padding: 0;
@@ -338,6 +336,6 @@ header {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #FFAFC5;
-  color: #0B3948;
+  background-color: #6B2737;
+  color: #EBF5EE;
 }/*# sourceMappingURL=main.css.map */

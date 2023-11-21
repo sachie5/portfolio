@@ -30,7 +30,6 @@ header {
 
 .about {
     padding: 20px;
-    background-color: $tertiary-color;
     color: $secondary-color;
 
     &__description {
@@ -76,6 +75,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
+    color: $secondary-color;
 
     &__title {
         padding: 20px;
@@ -151,7 +151,6 @@ header {
 
 
 .projects {
-    background-color: $tertiary-color;
     color: $secondary-color;
 
     &__title {
@@ -215,7 +214,7 @@ header {
             &--item3 {
                 grid-area: project3;
             }
-/* 
+
             &--item4{
                 display: none;
             }
@@ -226,7 +225,7 @@ header {
 
             &--item6{
                 display: none;
-            } */
+            }
         }
 
         &--image {
@@ -303,7 +302,7 @@ header {
 
         display: flex;
         justify-content: space-between;
-        padding: 80px 0 0 0;
+        padding: 80px 0;
 
         &__words {
             display: flex;
@@ -320,7 +319,6 @@ header {
     }
 
     .about {
-        background-color: $tertiary-color;
         color: $secondary-color;
         padding: 20px;
 
@@ -330,6 +328,7 @@ header {
 
         &__grid {
             display: grid;
+            padding-right: 10px;
             grid-template-columns: 40% 1fr;
             grid-template-areas:
                 'image .'
@@ -366,6 +365,7 @@ header {
     .skills {
         justify-content: center;
         border: 50px;
+        color: $secondary-color;
 
 
         &__description {
@@ -380,6 +380,8 @@ header {
 
         
         &__grid{
+            justify-content: center;
+            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
             grid-template-areas:
             'spring-boot java react bem scss javascript css3 html5 git';
         
@@ -387,9 +389,7 @@ header {
     }
 
     .projects {
-        padding: 60px 10px;
-
-        background-color: $tertiary-color;
+        padding: 60px 20px;
         color: $secondary-color;
 
         &__figure {
