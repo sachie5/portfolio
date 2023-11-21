@@ -58,6 +58,7 @@ header {
 .skills {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 40px 20px;
   color: #EBF5EE;
 }
@@ -67,7 +68,7 @@ header {
   text-align: center;
 }
 .skills__description {
-  padding: 20px;
+  padding: 10px;
   line-height: 2;
 }
 .skills__image {
@@ -157,7 +158,7 @@ header {
 .projects__button__grid {
   display: grid;
   justify-items: center;
-  grid-template-areas: "project1" "project2" "project3";
+  grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
 }
 .projects__button__grid--item1 {
   grid-area: project1;
@@ -169,12 +170,15 @@ header {
   grid-area: project3;
 }
 .projects__button__grid--item4 {
+  grid-area: project4;
   display: none;
 }
 .projects__button__grid--item5 {
+  grid-area: project5;
   display: none;
 }
 .projects__button__grid--item6 {
+  grid-area: project6;
   display: none;
 }
 .projects__button--image {
@@ -190,14 +194,12 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  color: #6B2737;
 }
 .footer__image {
   width: 40px;
   height: auto;
   padding: 20px 0;
-}
-.footer__email {
-  color: #6B2737;
 }
 
 @media screen and (min-width: 768px) {
@@ -206,11 +208,11 @@ header {
     height: 100px;
     justify-content: space-between;
     padding: 20px 0;
-    color: #6B2737;
   }
   .header__name {
     font-size: 24px;
     padding: 10px 20px;
+    color: #6B2737;
   }
   .header__nav {
     display: inline-block;
@@ -219,7 +221,6 @@ header {
   }
   .header__link {
     text-decoration: none;
-    color: #6B2737;
     font-size: 20px;
     padding: 10px;
   }
@@ -228,8 +229,7 @@ header {
     font-weight: bolder;
     border: solid 2px #6B2737;
     border-radius: 10px;
-    background-color: #6B2737;
-    color: #EBF5EE;
+    color: #6B2737;
   }
   .intro {
     display: flex;
@@ -280,7 +280,7 @@ header {
     color: #EBF5EE;
   }
   .skills__description {
-    padding: 20px 140px;
+    padding: 20px 100px;
     text-align: center;
   }
   .skills__image {

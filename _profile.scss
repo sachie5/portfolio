@@ -74,6 +74,7 @@ header {
 .skills {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 40px 20px;
     color: $secondary-color;
 
@@ -84,7 +85,7 @@ header {
     }
 
     &__description {
-        padding: 20px;
+        padding: 10px;
         line-height: 2;
     }
 
@@ -200,7 +201,10 @@ header {
             grid-template-areas:
                 'project1'
                 'project2'
-                'project3';
+                'project3'
+                'project4'
+                'project5'
+                'project6';
         
         
             &--item1 {
@@ -215,15 +219,18 @@ header {
                 grid-area: project3;
             }
 
-            &--item4{
+            &--item4 {
+                grid-area: project4;
                 display: none;
             }
 
-            &--item5{
+            &--item5 {
+                grid-area: project5;
                 display: none;
             }
 
-            &--item6{
+            &--item6 {
+                grid-area: project6;
                 display: none;
             }
         }
@@ -246,6 +253,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color: $background-color;
 
     &__image {
         width: 40px;
@@ -253,9 +261,6 @@ header {
         padding: 20px 0;
     }
 
-    &__email {
-        color: $tertiary-color;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -264,11 +269,11 @@ header {
         height: 100px;
         justify-content: space-between;
         padding: 20px 0;
-        color: $tertiary-color;
 
         &__name {
             font-size: 24px;
             padding: 10px 20px;
+            color: $background-color;
         }
 
         &__nav {
@@ -279,19 +284,15 @@ header {
 
         &__link {
             text-decoration: none;
-            color: $tertiary-color;
             font-size: 20px;
             padding: 10px;
 
             &--button {
                 font-size: 0.7rem;
                 font-weight: bolder;
-                border: solid 2px $tertiary-color;
+                border: solid 2px $background-color;
                 border-radius: 10px;
-                background-color: $tertiary-color;
-                color: $secondary-color;
-
-
+                color: $background-color;
             }
         }
 
@@ -369,7 +370,7 @@ header {
 
 
         &__description {
-            padding: 20px 140px;
+            padding: 20px 100px;
             text-align: center;
 
         }
