@@ -39,6 +39,11 @@ header {
         padding: 10px;
     }
 
+    &__image {
+        height: 30em;
+        width: auto;
+    }
+
     &__grid {
         display: grid;
         grid-template-areas:
@@ -100,7 +105,7 @@ header {
         font-weight: bold;
         font-size: 14px;
     }
-    
+
     &__grid {
         display: grid;
         justify-items: center;
@@ -111,42 +116,42 @@ header {
             'spring-boot java react'
             'bem scss javascript'
             'css3 html5 git';
-        
-            &--item1 {
-                grid-area: git;
-            }
-            
-            &--item2 {
-                grid-area: html5;
-            }
-            
-            &--item3 {
-                grid-area: css3;
-            }
-            
-            &--item4 {
-                grid-area: javascript;
-            }
-            
-            &--item5 {
-                grid-area: scss;
-            }
-            
-            &--item6 {
-                grid-area: bem;
-            }
-            
-            &--item7 {
-                grid-area: react;
-            }
-            
-            &--item8 {
-                grid-area: java;
-            }
-            
-            &--item9 {
-                grid-area: spring-boot;
-            }
+
+        &--item1 {
+            grid-area: git;
+        }
+
+        &--item2 {
+            grid-area: html5;
+        }
+
+        &--item3 {
+            grid-area: css3;
+        }
+
+        &--item4 {
+            grid-area: javascript;
+        }
+
+        &--item5 {
+            grid-area: scss;
+        }
+
+        &--item6 {
+            grid-area: bem;
+        }
+
+        &--item7 {
+            grid-area: react;
+        }
+
+        &--item8 {
+            grid-area: java;
+        }
+
+        &--item9 {
+            grid-area: spring-boot;
+        }
     }
 }
 
@@ -205,16 +210,16 @@ header {
                 'project4'
                 'project5'
                 'project6';
-        
-        
+
+
             &--item1 {
                 grid-area: project1;
             }
-        
+
             &--item2 {
                 grid-area: project2;
             }
-        
+
             &--item3 {
                 grid-area: project3;
             }
@@ -300,7 +305,6 @@ header {
     }
 
     .intro {
-
         display: flex;
         justify-content: space-between;
         padding: 80px 0;
@@ -325,6 +329,11 @@ header {
 
         &__description {
             text-align: left;
+        }
+
+        &__image{
+            height: 40rem;
+            padding: 40px 0;
         }
 
         &__grid {
@@ -379,14 +388,14 @@ header {
             width: 3rem;
         }
 
-        
-        &__grid{
+
+        &__grid {
             justify-content: center;
-            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5%;
             grid-template-areas:
-            'spring-boot java react bem scss javascript css3 html5 git';
-        
-    }
+                'spring-boot java react bem scss javascript css3 html5 git';
+
+        }
     }
 
     .projects {

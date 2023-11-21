@@ -32,6 +32,10 @@ header {
   width: 100%;
   padding: 10px;
 }
+.about__image {
+  height: 30em;
+  width: auto;
+}
 .about__grid {
   display: grid;
   grid-template-areas: "heading" "image" "paragraph1" "paragraph2";
@@ -250,6 +254,10 @@ header {
   }
   .about__description {
     text-align: left;
+  }
+  .about__image {
+    height: 40rem;
+    padding: 40px 0;
   }
   .about__grid {
     display: grid;
