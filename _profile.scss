@@ -150,28 +150,6 @@ header {
 }
 
 
-.grid-container3 {
-    display: grid;
-    justify-items: center;
-    grid-template-areas:
-        'project1'
-        'project2'
-        'project3';
-
-
-    .grid3-item1 {
-        grid-area: project1;
-    }
-
-    .grid3-item2 {
-        grid-area: project2;
-    }
-
-    .grid3-item3 {
-        grid-area: project3;
-    }
-}
-
 .projects {
     background-color: $tertiary-color;
     color: $secondary-color;
@@ -217,6 +195,39 @@ header {
         color: $secondary-color;
         text-decoration: none;
 
+        &__grid {
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+                'project1'
+                'project2'
+                'project3';
+        
+        
+            &--item1 {
+                grid-area: project1;
+            }
+        
+            &--item2 {
+                grid-area: project2;
+            }
+        
+            &--item3 {
+                grid-area: project3;
+            }
+/* 
+            &--item4{
+                display: none;
+            }
+
+            &--item5{
+                display: none;
+            }
+
+            &--item6{
+                display: none;
+            } */
+        }
 
         &--image {
             height: 21px;
@@ -248,7 +259,7 @@ header {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .header {
         display: flex;
         height: 100px;
@@ -352,12 +363,6 @@ header {
         }
     }
 
-
-    .grid-container {
-        display: flex;
-        justify-content: center;
-    }
-
     .skills {
         justify-content: center;
         border: 50px;
@@ -372,6 +377,13 @@ header {
         &__image {
             width: 3rem;
         }
+
+        
+        &__grid{
+            grid-template-areas:
+            'spring-boot java react bem scss javascript css3 html5 git';
+        
+    }
     }
 
     .projects {
@@ -396,38 +408,13 @@ header {
             display: inline;
         }
 
-        .grid-container3 {
+        &__grid {
             display: grid;
             gap: 40px 5px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:
                 'project1 project2 project3'
                 'project4 project5 project6';
-        }
-
-        .grid3-item1 {
-            grid-area: project1;
-        }
-
-        .grid3-item2 {
-            grid-area: project2;
-        }
-
-        .grid3-item3 {
-            grid-area: project3;
-        }
-
-
-        .grid3-item4 {
-            grid-area: project4;
-        }
-
-        .grid3-item5 {
-            grid-area: project5;
-        }
-
-        .grid3-item6 {
-            grid-area: project6;
         }
 
     }

@@ -88,56 +88,32 @@ header {
   gap: 35px;
   grid-template-areas: "spring-boot java react" "bem scss javascript" "css3 html5 git";
 }
-
-.grid-item1 {
+.skills__grid--item1 {
   grid-area: git;
 }
-
-.grid-item2 {
+.skills__grid--item2 {
   grid-area: html5;
 }
-
-.grid-item3 {
+.skills__grid--item3 {
   grid-area: css3;
 }
-
-.grid-item4 {
+.skills__grid--item4 {
   grid-area: javascript;
 }
-
-.grid-item5 {
+.skills__grid--item5 {
   grid-area: scss;
 }
-
-.grid-item6 {
+.skills__grid--item6 {
   grid-area: bem;
 }
-
-.grid-item7 {
+.skills__grid--item7 {
   grid-area: react;
 }
-
-.grid-item8 {
+.skills__grid--item8 {
   grid-area: java;
 }
-
-.grid-item9 {
+.skills__grid--item9 {
   grid-area: spring-boot;
-}
-
-.grid-container3 {
-  display: grid;
-  justify-items: center;
-  grid-template-areas: "project1" "project2" "project3";
-}
-.grid-container3 .grid3-item1 {
-  grid-area: project1;
-}
-.grid-container3 .grid3-item2 {
-  grid-area: project2;
-}
-.grid-container3 .grid3-item3 {
-  grid-area: project3;
 }
 
 .projects {
@@ -178,6 +154,32 @@ header {
   font-weight: bold;
   color: #0B3948;
   text-decoration: none;
+}
+.projects__button__grid {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "project1" "project2" "project3";
+  /* 
+              &--item4{
+                  display: none;
+              }
+
+              &--item5{
+                  display: none;
+              }
+
+              &--item6{
+                  display: none;
+              } */
+}
+.projects__button__grid--item1 {
+  grid-area: project1;
+}
+.projects__button__grid--item2 {
+  grid-area: project2;
+}
+.projects__button__grid--item3 {
+  grid-area: project3;
 }
 .projects__button--image {
   height: 21px;
@@ -276,10 +278,6 @@ header {
     grid-area: paragraph2;
     padding: 20px;
   }
-  .grid-container {
-    display: flex;
-    justify-content: center;
-  }
   .skills {
     justify-content: center;
     border: 50px;
@@ -290,6 +288,9 @@ header {
   }
   .skills__image {
     width: 3rem;
+  }
+  .skills__grid {
+    grid-template-areas: "spring-boot java react bem scss javascript css3 html5 git";
   }
   .projects {
     padding: 60px 10px;
@@ -308,29 +309,11 @@ header {
   .projects__buttons {
     display: inline;
   }
-  .projects .grid-container3 {
+  .projects__grid {
     display: grid;
     gap: 40px 5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "project1 project2 project3" "project4 project5 project6";
-  }
-  .projects .grid3-item1 {
-    grid-area: project1;
-  }
-  .projects .grid3-item2 {
-    grid-area: project2;
-  }
-  .projects .grid3-item3 {
-    grid-area: project3;
-  }
-  .projects .grid3-item4 {
-    grid-area: project4;
-  }
-  .projects .grid3-item5 {
-    grid-area: project5;
-  }
-  .projects .grid3-item6 {
-    grid-area: project6;
   }
   .footer {
     height: 20vh;
