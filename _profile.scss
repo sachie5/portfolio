@@ -110,47 +110,45 @@ header {
             'spring-boot java react'
             'bem scss javascript'
             'css3 html5 git';
-    
+        
+            &--item1 {
+                grid-area: git;
+            }
+            
+            &--item2 {
+                grid-area: html5;
+            }
+            
+            &--item3 {
+                grid-area: css3;
+            }
+            
+            &--item4 {
+                grid-area: javascript;
+            }
+            
+            &--item5 {
+                grid-area: scss;
+            }
+            
+            &--item6 {
+                grid-area: bem;
+            }
+            
+            &--item7 {
+                grid-area: react;
+            }
+            
+            &--item8 {
+                grid-area: java;
+            }
+            
+            &--item9 {
+                grid-area: spring-boot;
+            }
     }
 }
 
-
-
-.grid-item1 {
-    grid-area: git;
-}
-
-.grid-item2 {
-    grid-area: html5;
-}
-
-.grid-item3 {
-    grid-area: css3;
-}
-
-.grid-item4 {
-    grid-area: javascript;
-}
-
-.grid-item5 {
-    grid-area: scss;
-}
-
-.grid-item6 {
-    grid-area: bem;
-}
-
-.grid-item7 {
-    grid-area: react;
-}
-
-.grid-item8 {
-    grid-area: java;
-}
-
-.grid-item9 {
-    grid-area: spring-boot;
-}
 
 .grid-container3 {
     display: grid;
