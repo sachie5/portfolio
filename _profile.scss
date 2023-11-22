@@ -482,3 +482,11 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 1440px){
+    .projects {
+        &__button {
+            width: 6rem;
+        }
+    }
+}
