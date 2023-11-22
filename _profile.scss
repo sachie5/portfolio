@@ -193,7 +193,7 @@ header {
         justify-content: space-evenly;
         width: 7rem;
         border: 2px solid $secondary-color;
-        padding: 10px 15px;
+        padding: 10px 10px;
         border-radius: 10px;
         font-size: 14px;
         font-weight: bold;
@@ -419,6 +419,13 @@ header {
         &__name {
             font-size: 30px;
         }
+        &__button {
+            display: inline-flex;
+                align-items: center;
+                justify-content: space-evenly;
+                text-align: center;
+                width: 49%;
+        }
 
         &__grid {
             display: grid;
@@ -465,6 +472,10 @@ header {
     .projects {
         &__description {
             font-size: 18px;
+        }
+
+        &__button {
+            width: 40%;
         }
     }
 }

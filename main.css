@@ -152,7 +152,7 @@ header {
   justify-content: space-evenly;
   width: 7rem;
   border: 2px solid #EBF5EE;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -318,6 +318,13 @@ header {
   .projects__name {
     font-size: 30px;
   }
+  .projects__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 49%;
+  }
   .projects__grid {
     display: grid;
     gap: 20px;
@@ -347,6 +354,9 @@ header {
   }
   .projects__description {
     font-size: 18px;
+  }
+  .projects__button {
+    width: 40%;
   }
 }
 * {
