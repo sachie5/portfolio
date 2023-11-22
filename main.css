@@ -318,17 +318,14 @@ header {
   .projects__name {
     font-size: 30px;
   }
-  .projects__buttons {
-    display: inline;
-  }
   .projects__grid {
     display: grid;
-    gap: 40px 5px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "project1 project2 project3" "project4 project5 project6";
   }
   .footer {
-    height: 16vh;
+    height: 17vh;
     flex-direction: row;
     align-items: center;
   }
@@ -339,6 +336,17 @@ header {
   .footer__email {
     text-align: right;
     padding-right: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__description {
+    font-size: 20px;
+  }
+  .skills__description {
+    font-size: 20px;
+  }
+  .projects__description {
+    font-size: 18px;
   }
 }
 * {

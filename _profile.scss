@@ -420,23 +420,18 @@ header {
             font-size: 30px;
         }
 
-        &__buttons {
-            display: inline;
-        }
-
         &__grid {
             display: grid;
-            gap: 40px 5px;
+            gap: 20px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:
                 'project1 project2 project3'
                 'project4 project5 project6';
         }
-
     }
 
     .footer {
-        height: 16vh;
+        height: 17vh;
         flex-direction: row;
         align-items: center;
 
@@ -451,4 +446,25 @@ header {
         }
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+    .about{
+       
+        &__description {
+            font-size: 20px;
+        }
+    }
+
+    .skills {
+        &__description {
+            font-size: 20px;
+        }
+    }
+
+    .projects {
+        &__description {
+            font-size: 18px;
+        }
+    }
 }
