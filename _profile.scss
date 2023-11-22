@@ -419,12 +419,15 @@ header {
         &__name {
             font-size: 30px;
         }
+
+        &__description{
+            font-size: 12px;
+        }
         &__button {
             display: inline-flex;
-                align-items: center;
-                justify-content: space-evenly;
-                text-align: center;
-                width: 49%;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 49%;
         }
 
         &__grid {
@@ -475,7 +478,7 @@ header {
         }
 
         &__button {
-            width: 40%;
+            width: 7rem;
         }
     }
 }

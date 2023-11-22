@@ -318,11 +318,13 @@ header {
   .projects__name {
     font-size: 30px;
   }
+  .projects__description {
+    font-size: 12px;
+  }
   .projects__button {
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
-    text-align: center;
     width: 49%;
   }
   .projects__grid {
@@ -356,7 +358,7 @@ header {
     font-size: 18px;
   }
   .projects__button {
-    width: 40%;
+    width: 7rem;
   }
 }
 * {
