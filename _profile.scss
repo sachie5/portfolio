@@ -273,27 +273,29 @@ header {
         display: flex;
         height: 100px;
         justify-content: space-between;
-        padding: 20px 0;
+        align-items: center;
+        padding: 20px;
 
         &__name {
             font-size: 24px;
-            padding: 10px 20px;
             color: $background-color;
         }
 
         &__nav {
             display: inline-block;
             text-align: right;
-            padding: 10px 20px;
         }
 
         &__link {
+            color: $background-color;
             text-decoration: none;
             font-size: 20px;
-            padding: 10px;
+            padding: 0 10px;
 
             &--button {
+                display: inline;
                 font-size: 0.7rem;
+                padding: 10px;
                 font-weight: bolder;
                 border: solid 2px $background-color;
                 border-radius: 10px;
@@ -306,12 +308,14 @@ header {
 
     .intro {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
         padding: 80px 0;
 
         &__words {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
             padding-left: 40px;
 
         }
@@ -319,21 +323,23 @@ header {
         &__image {
             &--large {
                 display: flex;
+                align-items: center;
             }
         }
     }
 
     .about {
         color: $secondary-color;
-        padding: 20px;
+        padding: 20px 10px;
 
         &__description {
             text-align: left;
         }
 
         &__image{
-            height: 40rem;
-            padding: 40px 0;
+            height: 75%;
+            width: 22em;
+            padding: 40px;
         }
 
         &__grid {
@@ -430,7 +436,7 @@ header {
     }
 
     .footer {
-        height: 20vh;
+        height: 16vh;
         flex-direction: row;
         align-items: center;
 

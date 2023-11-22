@@ -211,25 +211,27 @@ header {
     display: flex;
     height: 100px;
     justify-content: space-between;
-    padding: 20px 0;
+    align-items: center;
+    padding: 20px;
   }
   .header__name {
     font-size: 24px;
-    padding: 10px 20px;
     color: #6B2737;
   }
   .header__nav {
     display: inline-block;
     text-align: right;
-    padding: 10px 20px;
   }
   .header__link {
+    color: #6B2737;
     text-decoration: none;
     font-size: 20px;
-    padding: 10px;
+    padding: 0 10px;
   }
   .header__link--button {
+    display: inline;
     font-size: 0.7rem;
+    padding: 10px;
     font-weight: bolder;
     border: solid 2px #6B2737;
     border-radius: 10px;
@@ -237,27 +239,31 @@ header {
   }
   .intro {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 80px 0;
   }
   .intro__words {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     padding-left: 40px;
   }
   .intro__image--large {
     display: flex;
+    align-items: center;
   }
   .about {
     color: #EBF5EE;
-    padding: 20px;
+    padding: 20px 10px;
   }
   .about__description {
     text-align: left;
   }
   .about__image {
-    height: 40rem;
-    padding: 40px 0;
+    height: 75%;
+    width: 22em;
+    padding: 40px;
   }
   .about__grid {
     display: grid;
@@ -322,7 +328,7 @@ header {
     grid-template-areas: "project1 project2 project3" "project4 project5 project6";
   }
   .footer {
-    height: 20vh;
+    height: 16vh;
     flex-direction: row;
     align-items: center;
   }
