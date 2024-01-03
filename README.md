@@ -13,12 +13,12 @@ Welcome to my project creating a personal portfolio, demonstrating my personalit
 
 My portfolio is divided in sections to display relevant information about myself for potential employers, colleagues and members of the tech community.
 
-**Header**: Displays my name and navigation bar which can shortcut which section the user would like to view.
-**Intro**: Displays name, job title and image. 
-**About Me**: Displays an image of myself and information about my journey in addition to aspects of my personality.
-**Technical Skills**: Displays the coding languages and skills I have obtained.
-**Projects**: A grid displaying projects I have currently completed including the coding language and a screenshot. The repository and live site are also linked for viewing.
-**Footer**: Access to my GitHub, Linkedin and CV. 
+- **Header**: Displays my name and navigation bar which can shortcut which section the user would like to view.
+- **Intro**: Displays name, job title and image. 
+- **About Me**: Displays an image of myself and information about my journey in addition to aspects of my personality.
+- **Technical Skills**: Displays the coding languages and skills I have obtained.
+- **Projects**: A grid displaying projects I have currently completed including the coding language and a screenshot. The repository and live site are also linked for viewing.
+- **Footer**: Access to my GitHub, Linkedin and CV. 
 
 ## HTML Structure
 
