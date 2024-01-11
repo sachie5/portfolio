@@ -135,6 +135,7 @@ header {
 .projects__figure {
   width: 95%;
   padding: 20px;
+  height: 400px;
 }
 .projects__skill {
   padding: 20px 0px 5px 0;
