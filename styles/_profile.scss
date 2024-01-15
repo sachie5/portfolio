@@ -167,13 +167,12 @@ header {
     }
 
     &__image{
-        height: 45%;
+        height: 12rem;
     }
 
     &__figure {
         width: 95%;
         padding: 20px;
-        height: 400px;
     }
 
     &__skill {
@@ -215,7 +214,7 @@ header {
                 'project4'
                 'project5'
                 'project6';
-
+            grid-template-rows: repeat(6, 1fr);
 
             &--item1 {
                 grid-area: project1;
