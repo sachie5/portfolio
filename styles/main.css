@@ -324,6 +324,7 @@ header {
   }
   .projects__description {
     font-size: 12px;
+    height: 5.3rem;
   }
   .projects__button {
     display: inline-flex;
@@ -358,8 +359,12 @@ header {
   .skills__description {
     font-size: 20px;
   }
+  .projects__figure {
+    height: 30rem;
+  }
   .projects__description {
     font-size: 18px;
+    height: 8rem;
   }
   .projects__button {
     width: 7rem;
@@ -368,6 +373,13 @@ header {
 @media screen and (min-width: 1440px) {
   .projects__button {
     width: 6rem;
+  }
+  .projects__description {
+    height: 5.5rem;
+  }
+  .projects__image {
+    width: 25rem;
+    height: 15rem;
   }
 }
 * {

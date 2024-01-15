@@ -426,6 +426,7 @@ header {
 
         &__description{
             font-size: 12px;
+            height: 5.3rem;
         }
         &__button {
             display: inline-flex;
@@ -463,6 +464,7 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+
     .about{
        
         &__description {
@@ -477,8 +479,13 @@ header {
     }
 
     .projects {
+
+        &__figure{
+            height: 30rem;
+        }
         &__description {
             font-size: 18px;
+            height: 8rem;
         }
 
         &__button {
@@ -491,6 +498,15 @@ header {
     .projects {
         &__button {
             width: 6rem;
+        }
+
+        &__description{
+            height: 5.5rem;
+        }
+
+        &__image{
+            width: 25rem;
+            height: 15rem;
         }
     }
 }
