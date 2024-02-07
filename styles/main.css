@@ -315,6 +315,9 @@ header {
   }
   .projects__figure {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   .projects__skill {
     font-size: 15px;
@@ -361,9 +364,6 @@ header {
   }
   .projects__figure {
     height: 30rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
   .projects__description {
     font-size: 18px;
