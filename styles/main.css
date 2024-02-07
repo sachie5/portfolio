@@ -361,6 +361,9 @@ header {
   }
   .projects__figure {
     height: 30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   .projects__description {
     font-size: 18px;
@@ -380,6 +383,7 @@ header {
   .projects__image {
     width: 25rem;
     height: 15rem;
+    align-self: center;
   }
 }
 * {

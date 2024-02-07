@@ -482,6 +482,9 @@ header {
 
         &__figure{
             height: 30rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
         }
         &__description {
             font-size: 18px;
@@ -507,6 +510,7 @@ header {
         &__image{
             width: 25rem;
             height: 15rem;
+            align-self: center;
         }
     }
 }
