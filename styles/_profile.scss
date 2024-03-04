@@ -171,8 +171,8 @@ header {
     }
 
     &__figure {
-        width: 95%;
         padding: 20px;
+        text-align: center;
     }
 
     &__skill {
@@ -206,7 +206,6 @@ header {
 
         &__grid {
             display: grid;
-            justify-items: center;
             grid-template-areas:
                 'project1'
                 'project2'

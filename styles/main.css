@@ -133,8 +133,8 @@ header {
   height: 12rem;
 }
 .projects__figure {
-  width: 95%;
   padding: 20px;
+  text-align: center;
 }
 .projects__skill {
   padding: 20px 0px 5px 0;
@@ -164,7 +164,6 @@ header {
 }
 .projects__button__grid {
   display: grid;
-  justify-items: center;
   grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
   grid-template-rows: repeat(6, 1fr);
 }
